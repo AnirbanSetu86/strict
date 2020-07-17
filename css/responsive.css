@@ -1,0 +1,104 @@
+
+
+@media (max-width: 575px){
+
+
+    .navbar-brand img{
+    	height: 35px;
+    }
+
+    .banner-section .row h1 {
+    font-size: 65px;
+    font-weight: 400;}
+
+
+    .banner-section .row span {
+
+    	height: 2px;
+    }
+
+   .about-us-section .row{
+   
+    padding: 25px 0;
+	}
+ 
+
+    .about-us-section p {
+    font-size: 13px;}
+
+    .about-us-section h2{
+
+    	font-size: 25px;
+    }
+
+
+
+    .service-section{
+
+    	padding:80px 0;
+    }
+ 
+
+   .service-section .service .icon {
+    width: 90px;
+    height: 100px;
+    font-size: 40px;
+    line-height: 95px;
+   
+
+    }
+
+
+    .service-section .service h2{
+
+    	font-size:15px;
+    }
+
+     .service-section .service p{
+
+    	font-size:12px;
+    }
+
+  
+   .showcase-section .heading h2 {
+    font-size: 25px;
+}
+
+   .showcase-section .heading p {
+    font-size: 13px;
+
+}
+
+.signup-section .heading h1{
+    font-size: 25px;}
+
+.signup-section .heading p {
+    
+    font-size: 13px;
+    color:#ffffff69;
+}
+
+
+.text-white {
+
+    font-size: 13px;
+}
+
+.btn-custom {
+   
+    padding: 10px 25px;
+}
+
+
+footer ul li a {
+
+	width: 20px;
+	height: 20px;
+}
+
+footer p {
+ 
+    font-size: 13px;
+}
+
+}

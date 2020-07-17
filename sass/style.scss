@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400;1,600&display=swap');
+
+
+$primarycolor: #2d3950;
+$secondarycolor: #15a4fa;
+$bgcolor:#F6F6F9;
+
+body{
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;
+line-height: 1.6;
+color: $primarycolor;
+
+}
+
+
+%gradient{
+background: #5ea5e2; /* Old browsers */
+background: -moz-linear-gradient(left,  #5ea5e2 50%, #72b3d6 50%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left,  #5ea5e2 50%,#72b3d6 50%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right,  #5ea5e2 50%,#72b3d6 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5ea5e2', endColorstr='#72b3d6',GradientType=1 ); /* IE6-9 */
+}
+
+%transition{
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+
+}
+.navbar{
+	background-color: $bgcolor;
+	padding: 25px 0;
+	.navbar-nav{
+		.nav-item{
+
+			.nav-link{
+
+				
+				text-transform: uppercase;
+				font-weight: 600;
+				color: $primarycolor;
+
+				@extend %transition; 
+
+				&:hover{
+                       
+                      color:$secondarycolor;
+				}
+
+
+
+			}
+		}
+	}
+}
+
+
+.banner-section{
+
+	background-image: url(../images/Strict.jpg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+
+	.click{
+
+		color: white;
+		position: absolute;
+		bottom: 25px;
+		font-size: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+
+	}
+
+	.row{
+		height: 100vh;
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+
+		h1{
+
+			font-size: 100px;
+			color: #fff;
+			text-transform: uppercase;
+			font-weight: 600;
+
+		}
+		span{
+
+			background-color: $secondarycolor;
+			display: block;
+			height: 3px;
+			margin-bottom: 15px;
+
+
+		}
+		p{
+
+			color:white;
+			font-size: 15px;
+
+		}
+	}
+}
+
+.btn-custom{
+
+	border:1px solid $secondarycolor;
+	color: white;
+	padding: 12px 30px;
+	@extend %transition; 
+
+	&:hover{
+		background-color:$secondarycolor;
+		color: white;
+	}
+}
+
+
+.about-us-section{
+
+	background-color: $bgcolor;
+	text-align: center;
+	padding: 50px 0;
+
+	h2{
+
+		font-weight: 500px;
+		font-size: 25px;
+
+	}
+	p{
+
+		font-size: 15px;
+		padding: 10px 0;
+		text-align: justify all;
+
+	}
+
+}
+
+.service-section{
+
+	padding: 100px 0;
+	text-align: center;
+
+          .service{
+          	.icon{
+
+    @extend %gradient;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 45px;
+    text-align: center;
+    line-height: 100px;
+    margin:auto;
+}
+
+          		i{
+          			text-shadow: 2px 1px 0px #3F51B5;
+          		
+          		}
+
+                    h2{
+                    	font-weight: 600;
+                    	font-size: 18px;
+                    	margin:15px 0;
+                    }
+          	        p{ 
+          	        	font-size: 15px;}
+          	   	}
+          	
+          }
+          
+
+.showcase-section{
+
+
+     background-color: $bgcolor; 
+     align-items:center;
+     justify-content:center;
+     text-align:center;
+     padding:50px 0;
+
+
+	.heading{
+
+		    padding: 40px 0;
+		    h2{
+		    	font-size: 30px;
+		    }
+		    p{
+		    	font-size: 15px;
+		    }
+
+	}
+
+	.row{
+
+		img{
+			padding:10px 0;
+		}
+	}
+
+}
+
+.signup-section{
+
+	padding: 100px 0;
+
+	
+
+	.heading{
+		h1{
+
+			font-size: 40px;
+			color:white;
+
+		}
+		p{
+
+			font-size:15px;
+			color:#ffffff69;
+
+		}
+	}
+
+
+ }
+
+
+ footer{
+ 	background-color: $bgcolor;
+ 	padding: 20px 0;
+ 	p{
+
+ 		margin-bottom: 0;
+
+
+ 	}
+ 	ul{
+ 		li{
+ 			a{
+ 				margin-left: 12px;
+ 				background-color: $secondarycolor;
+ 				color: #fff;
+ 				width: 30px;
+ 				height: 30px;
+ 				display: block;
+ 				text-align: center;
+ 				line-height: 30px;
+ 				border:1px solid $secondarycolor;;
+ 				&:hover{
+
+ 					background-color:transparent;
+ 					color: $secondarycolor;
+
+
+
+ 				}
+ 			}
+ 		}
+ 	}
+ }
